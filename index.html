@@ -1,17 +1,37 @@
-<div class="background-form">
-    <header>
-      <h1>Banco de Dados</h1>
-         <link href="https://rafaelshelby19.github.io/bancodedadosss/style.css" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco de Dados</title>
+    <link href="https://rafaelshelby19.github.io/bancodedadosss/style.css" rel="stylesheet">
     <script src="https://rafaelshelby19.github.io/bancodedadosss/script.js" defer></script>
-      <img src="assets/banco.jpg" alt="Buraco Negro">
+</head>
+
+<body>
+    <header>
+        <h1>Banco de Dados</h1>
+        <!-- Ensure that the path to the image is correct -->
+        <img src="https://rafaelshelby19.github.io/bancodedadosss/banco.jpg" alt="Imagem representativa de Banco de Dados" />
     </header>
-    <form [formGroup]="nodeForm" (ngSubmit)="onSubmit()">
-      <label for="nodeData">Node Data:</label>
-      <input id="nodeData" formControlName="nodeData">
-      <button type="submit">Submit</button>
-    </form>
-  </div>
-  
+
+    <main>
+        <section class="background-form">
+            <form [formGroup]="nodeForm" (ngSubmit)="onSubmit()">
+                <fieldset>
+                    <legend>Enter Your Data</legend>
+                    <label for="nodeData">Node Data:</label>
+                    <input id="nodeData" formControlName="nodeData" placeholder="Enter node data" />
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
+
 
 
   
