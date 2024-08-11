@@ -27,6 +27,7 @@ input, button {
     width: 80%; /* Largura total dentro do formulário */
     padding: 10px;
     margin-top: 10px;
+   margin-left: auto; /* Empurra para a direita dentro do container */
 }
 
 button {
@@ -35,6 +36,7 @@ button {
     border: none;
     cursor: pointer;
     font-weight: bold; /* Texto em negrito para o botão */
+   margin-left: auto; /* Empurra para a direita dentro do container */
 }
 
         
