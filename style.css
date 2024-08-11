@@ -1,33 +1,27 @@
 
-  /* Reset básico para margens e padding */
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    font-family: Arial, sans-serif; /* Ou a fonte de sua preferência */
+        .form-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background: no-repeat center center fixed;
-    background-image: url('https://rafaelshelby19.github.io/bancodedadosss/banco.jpg'); /* Caminho correto da imagem */
-    background-size: cover;
-}
-
-.background-form {
-    background: rgba(255, 255, 255, 0.95); /* Fundo branco com maior opacidade para legibilidade */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    align-items: center; /* Centraliza os elementos horizontalmente */
+    justify-content: center; /* Centraliza os elementos verticalmente */
+    width: 300px; /* Ajuste conforme necessário para seu layout */
+    background: rgba(255, 255, 255, 0.95); /* Fundo com transparência */
     padding: 20px;
-    border-radius: 10px; /* Aumento do raio da borda para maior suavidade */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra mais acentuada */
-    width: 350px; /* Largura do formulário ajustada */
-    align-items: center;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para destacar o formulário */
+    margin: auto; /* Auto-margens para centralização no nível superior */
 }
 
 input, button {
-    width: 80%; /* Largura total dentro do formulário */
+    width: 100%; /* Largura total dentro do formulário */
     padding: 10px;
     margin-top: 10px;
-   margin-left: 100; /* Empurra para a direita dentro do container */
+    box-sizing: border-box; /* Inclui padding e border na largura */
+}
+
+input {
+    border: 1px solid #ccc; /* Estilo da borda do input */
+    border-radius: 4px; /* Bordas arredondadas para o input */
 }
 
 button {
@@ -36,9 +30,7 @@ button {
     border: none;
     cursor: pointer;
     font-weight: bold; /* Texto em negrito para o botão */
-    align-items: center;
 }
 
-        
     
 
