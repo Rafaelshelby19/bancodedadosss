@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,15 +8,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="background-form">
-        <form [formGroup]="nodeForm" (ngSubmit)="onSubmit()">
+    <div class="form-container">
+        <form>
             <fieldset>
-               
+                <legend>Node Information</legend>
                 <label for="nodeData">Node Data:</label>
-                <input id="nodeData" formControlName="nodeData" placeholder="Enter node data">
+                <input id="nodeData" placeholder="Enter node data">
                 <button type="submit">Submit</button>
-            </form>
-        </div>
+            </fieldset>
+        </form>
+    </div>
 </body>
 </html>
 
