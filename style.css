@@ -20,7 +20,7 @@ html, body {
     border-radius: 10px; /* Aumento do raio da borda para maior suavidade */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra mais acentuada */
     width: 350px; /* Largura do formulário ajustada */
-    height: auto; /* Altura automática baseada no conteúdo */
+    align-items: center;
 }
 
 input, button {
@@ -36,7 +36,7 @@ button {
     border: none;
     cursor: pointer;
     font-weight: bold; /* Texto em negrito para o botão */
-   margin-left: 100; /* Empurra para a direita dentro do container */
+    align-items: center;
 }
 
         
