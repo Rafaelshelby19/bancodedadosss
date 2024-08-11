@@ -1,34 +1,30 @@
-/* Reset básico para margens e padding */
+
+  /* Reset básico para margens e padding */
 html, body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
     font-family: Arial, sans-serif; /* Ou a fonte de sua preferência */
-}
-
-body {
-    background-image: url('https://rafaelshelby19.github.io/bancodedadosss/banco.jpg'); /* Substitua pela URL da sua imagem de fundo */
-    background-size: cover;
-    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    background: no-repeat center center fixed;
+    background-image: url('https://rafaelshelby19.github.io/bancodedadosss/banco.jpg'); /* Caminho correto da imagem */
+    background-size: cover;
 }
 
 .background-form {
-    background: rgba(255, 255, 255, 0.8); /* Fundo branco com leve transparência */
+    background: rgba(255, 255, 255, 0.95); /* Fundo branco com maior opacidade para legibilidade */
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    width: 300px; /* Ajuste conforme a necessidade */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    border-radius: 10px; /* Aumento do raio da borda para maior suavidade */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra mais acentuada */
+    width: 350px; /* Largura do formulário ajustada */
+    height: auto; /* Altura automática baseada no conteúdo */
 }
 
 input, button {
-    width: 100%;
+    width: 100%; /* Largura total dentro do formulário */
     padding: 10px;
     margin-top: 10px;
 }
@@ -38,10 +34,9 @@ button {
     color: white;
     border: none;
     cursor: pointer;
+    font-weight: bold; /* Texto em negrito para o botão */
 }
 
-  
-  
         
     
 
