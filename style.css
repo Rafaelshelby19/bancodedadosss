@@ -1,54 +1,50 @@
-.background-form {
-    position: relative; /* Contexto de posicionamento para z-index dos filhos */
+/* CSS Geral para o corpo e configuração da imagem de fundo */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Ajuste o tipo de fonte conforme necessário */
 }
 
-.background-form header {
-    position: relative; /* Necessário para controle de z-index */
-    z-index: 0; /* Mantém a imagem de fundo atrás de tudo */
-}
-
-.background-form header img {
-    display: none; /* Esconde a imagem no cabeçalho se não for mais necessária */
-}
-
-.background-form form {
-    position: relative; /* Garante que o formulário fique na frente da imagem */
-    z-index: 1; /* Maior que o z-index da imagem */
-    background-image: url('https://rafaelshelby19.github.io/bancodedadosss/banco.jpg'); /* Define a imagem como fundo */
+.full-screen-image {
+    background-image: url('https://rafaelshelby19.github.io/bancodedadosss/banco.jpg'); /* Caminho da imagem de fundo */
     background-size: cover; /* Cobertura completa do fundo */
     background-position: center; /* Centraliza a imagem de fundo */
-    background-color: rgba(255, 255, 255, 0.5); /* Fundo levemente transparente para misturar com a imagem */
-    padding: 15px; /* Espaçamento interno */
-    border-radius: 8px; /* Bordas arredondadas para o formulário */
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra leve para destaque */
-    width: 80%; /* Ajusta a largura do formulário para 80% do container pai */
-    max-width: 600px; /* Máximo de largura para evitar que fique muito largo */
-    min-width: 300px; /* Mínimo de largura para garantir legibilidade */
-    margin: auto; /* Centraliza o formulário horizontalmente */
-    height: auto;
+    position: relative; /* Permite posicionamento absoluto dos elementos internos */
+    height: 100vh; /* Altura total da viewport */
+    display: flex;
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
 }
 
-.background-form label,
-.background-form input,
-.background-form button {
-    display: block; /* Faz cada elemento ser um bloco, ajudando no layout */
-    width: 90%; /* Faz cada elemento usar a largura total disponível */
-    margin-top: 10px; /* Espaço entre os elementos */
-    align-items: center;
+.form-container {
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo preto translúcido para destaque */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+    width: 300px; /* Largura fixa para o formulário */
+    text-align: center;
+}
+
+.background-form label, .background-form input, .background-form button {
+    display: block;
+    width: 100%; /* Utiliza a largura total disponível dentro do formulário */
+    margin-top: 10px;
 }
 
 .background-form input {
-    height: 40px; /* Altura fixa para input e botão */
-    padding: 0 10px; /* Padding interno */
-    border: 2px solid #ccc; /* Borda para identificação fácil */
-    border-radius: 4px; /* Bordas arredondadas */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 .background-form button {
-    background-color: #007BFF; /* Cor de fundo para o botão */
-    color: white; /* Cor do texto */
-    border-color: #007BFF; /* Cor da borda do botão */
-    transform: translateX(2%) translateY(0%);
-    height: 40px;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
+
 
