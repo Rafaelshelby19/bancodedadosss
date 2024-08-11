@@ -1,63 +1,45 @@
+/* Reset básico para margens e padding */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif; /* Ou a fonte de sua preferência */
+}
+
+body {
+    background-image: url('https://rafaelshelby19.github.io/bancodedadosss/banco.jpg'); /* Substitua pela URL da sua imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .background-form {
-    position: relative; /* Contexto de posicionamento para z-index dos filhos */
-  }
-  
-  .background-form header {
-    position: relative; /* Necessário para controle de z-index */
-    z-index: 0; /* Mantém a imagem de fundo atrás de tudo */
-  }
-  
-  .background-form header img {
-    display: block; /* Remove qualquer espaço abaixo da imagem */
-    width: 100%; /* Faz a imagem cobrir todo o header */
-    height: auto; /* Mantém a proporção da imagem */
-    position: absolute; /* Posiciona absolutamente dentro do header */
-    top: 0;
-    left: 0;
-    z-index: -1; /* Coloca a imagem atrás de todos os conteúdos do header */
-  }
-  
-  .background-form form {
-    position: relative; /* Garante que o formulário fique na frente da imagem */
-    z-index: 1; /* Maior que o z-index da imagem */
-    background-color: rgba(255, 255, 255, 0.9); /* Fundo levemente transparente */
-    padding: 15px; /* Espaçamento interno */
-    border-radius: 8px; /* Bordas arredondadas para o formulário */
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra leve para destaque */
-    width: 80%; /* Ajusta a largura do formulário para 80% do container pai */
-    max-width: 600px; /* Máximo de largura para evitar que fique muito largo */
-    min-width: 300px; /* Mínimo de largura para garantir legibilidade */
-    margin: auto; /* Centraliza o formulário horizontalmente */
-    height: auto;
-  }
-  
-  
-  .background-form label,
-  .background-form input,
-  .background-form button {
-    display: block; /* Faz cada elemento ser um bloco, ajudando no layout */
-    width: 90%; /* Faz cada elemento usar a largura total disponível */
-    margin-top: 10px; /* Espaço entre os elementos */
+    background: rgba(255, 255, 255, 0.8); /* Fundo branco com leve transparência */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 300px; /* Ajuste conforme a necessidade */
+    display: flex;
+    flex-direction: column;
     align-items: center;
-  }
-  
-  .background-form input
- {
-    height: 40px; /* Altura fixa para input e botão */
-    padding: 0 10px; /* Padding interno */
-    border: 2px solid #ccc; /* Borda para identificação fácil */
-    border-radius: 4px; /* Bordas arredondadas */
-  }
-  
-  .background-form button {
-    background-color: #007BFF; /* Cor de fundo para o botão */
-    color: white; /* Cor do texto */
-    border-color: #007BFF; /* Cor da borda do botão */
-   transform: translateX(2%)translateY(0%);
-   height: 40px;
-   
-  }
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
   
   
         
