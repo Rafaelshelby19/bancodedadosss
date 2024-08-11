@@ -24,7 +24,7 @@ html, body {
 }
 
 input, button {
-    width: 100%; /* Largura total dentro do formulário */
+    width: 80%; /* Largura total dentro do formulário */
     padding: 10px;
     margin-top: 10px;
 }
