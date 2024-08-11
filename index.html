@@ -4,24 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banco de Dados</title>
-    <link href="https://rafaelshelby19.github.io/bancodedadosss/style.css" rel="stylesheet">
-    <script src="https://rafaelshelby19.github.io/bancodedadosss/script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <section class="background-form">
-            <form [formGroup]="nodeForm" (ngSubmit)="onSubmit()">
-                <fieldset>
-                    <legend>Node Information</legend>
-                    <label for="nodeData">Node Data:</label>
-                    <input id="nodeData" formControlName="nodeData" placeholder="Enter node data" />
-                </fieldset>
+    <div class="background-form">
+        <form [formGroup]="nodeForm" (ngSubmit)="onSubmit()">
+            <fieldset>
+                <legend>Node Information</legend>
+                <label for="nodeData">Node Data:</label>
+                <input id="nodeData" formControlName="nodeData" placeholder="Enter node data">
                 <button type="submit">Submit</button>
             </form>
-        </section>
-    </main>
+        </div>
 </body>
 </html>
+
 
 
   
