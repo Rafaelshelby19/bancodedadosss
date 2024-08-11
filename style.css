@@ -1,27 +1,34 @@
+body {
+    margin: 0; /* Remove a margem padrão do navegador */
+    padding: 0; /* Remove o padding padrão do navegador */
+    height: 100vh; /* Define a altura do corpo para cobrir a tela inteira */
+    background-image: url('https://rafaelshelby19.github.io/bancodedadosss/banco.jpg'); /* Define a imagem de fundo */
+    background-size: cover; /* Garante que a imagem cubra todo o espaço disponível */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    display: flex; /* Utiliza flexbox para alinhar os itens internos */
+    align-items: center; /* Alinha verticalmente */
+    justify-content: center; /* Alinha horizontalmente */
+}
 
-        .form-container {
-    display: flex;
-    flex-direction: column; /* Organiza os elementos em coluna */
-    align-items: center; /* Centraliza os elementos horizontalmente */
-    justify-content: center; /* Centraliza os elementos verticalmente */
-    width: 300px; /* Ajuste conforme necessário para seu layout */
-    background: rgba(255, 255, 255, 0.95); /* Fundo com transparência */
-    padding: 20px;
+.form-container {
+    width: 300px; /* Largura do formulário */
+    padding: 20px; /* Padding interno para o formulário */
+    background: rgba(255, 255, 255, 0.8); /* Fundo translúcido para o formulário */
     border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para destacar o formulário */
-    margin: auto; /* Auto-margens para centralização no nível superior */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para o formulário */
 }
 
 input, button {
     width: 100%; /* Largura total dentro do formulário */
     padding: 10px;
     margin-top: 10px;
-    box-sizing: border-box; /* Inclui padding e border na largura */
+    box-sizing: border-box; /* Inclui padding e borda na largura total */
 }
 
 input {
     border: 1px solid #ccc; /* Estilo da borda do input */
-    border-radius: 4px; /* Bordas arredondadas para o input */
+    border-radius: 4px; /* Bordas arredondadas */
 }
 
 button {
@@ -29,7 +36,7 @@ button {
     color: white;
     border: none;
     cursor: pointer;
-    font-weight: bold; /* Texto em negrito para o botão */
+    font-weight: bold; /* Texto em negrito */
 }
 
     
