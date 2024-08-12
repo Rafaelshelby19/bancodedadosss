@@ -2,7 +2,7 @@ body {
     margin: 0; /* Remove a margem padrão do navegador */
     padding: 0; /* Remove o padding padrão do navegador */
     height: 100vh; /* Define a altura do corpo para cobrir a tela inteira */
-    background-image: url('https://rafaelshelby19.github.io/bancodedadosss/banco.jpg'); /* Define a imagem de fundo */
+    background-image: url('https://rafaelshelby19.github.io/bancodedadosss/banco.jpg');
     background-size: cover; /* Garante que a imagem cubra todo o espaço disponível */
     background-position: center; /* Centraliza a imagem de fundo */
     background-repeat: no-repeat; /* Evita a repetição da imagem */
@@ -38,6 +38,7 @@ button {
     cursor: pointer;
     font-weight: bold; /* Texto em negrito */
 }
+
 
     
 
